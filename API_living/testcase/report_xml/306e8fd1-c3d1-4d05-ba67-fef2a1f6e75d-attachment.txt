@@ -1,0 +1,9 @@
+sheet getlist: 
+row_num 28: 
+sheet info: 
+row_num 13: 
+sheet updateChannel: 
+row_num 13: 
+更新直播频道信息
+请求包体: b'{"channelId": "cd7f0f10bdad", "description": "test", "name": "1"}' 
+返回信息: {'message': 'not uid field or uid cannot empty', 'code': 203} 

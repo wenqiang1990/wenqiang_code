@@ -1,0 +1,213 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[1]",
+        "uid" : "afd30ff9f29a5986",
+        "parentUid" : "bd3d2a8401ab529a502fbf004abea0e4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552954759,
+          "stop" : 1561552954787,
+          "duration" : 28
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "bd3d2a8401ab529a502fbf004abea0e4"
+    }, {
+      "name" : "AssertionError: assert 'channel:cd7f... uid:00000003' == 'success'\n  - channel:cd7f0f10bdad00000000 not in uid:00000003\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[2]",
+        "uid" : "d05aca0bdb658ca",
+        "parentUid" : "3a2c41e80fd9ed9000f54d34b49a6dec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552954951,
+          "stop" : 1561552954977,
+          "duration" : 26
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "3a2c41e80fd9ed9000f54d34b49a6dec"
+    }, {
+      "name" : "AssertionError: assert 'not channelId field' == 'success'\n  - not channelId field\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[3]",
+        "uid" : "f3d00f3692123817",
+        "parentUid" : "738a0765afe8c1ea746f8452f1eb2319",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552954996,
+          "stop" : 1561552955021,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "3" ]
+      } ],
+      "uid" : "738a0765afe8c1ea746f8452f1eb2319"
+    }, {
+      "name" : "AssertionError: assert 'channel:cd7f...d not in uid:' == 'success'\n  - channel:cd7f0f10bdad not in uid:\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[5]",
+        "uid" : "be0b70895c821675",
+        "parentUid" : "60f4a5d731aa36ad84fca7797d8024b4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552955134,
+          "stop" : 1561552955174,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "5" ]
+      } ],
+      "uid" : "60f4a5d731aa36ad84fca7797d8024b4"
+    }, {
+      "name" : "AssertionError: assert 'channel:cd7f...0000007000000' == 'success'\n  - channel:cd7f0f10bdad not in uid:00000007000000\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[6]",
+        "uid" : "ba02913873f0c827",
+        "parentUid" : "d56b39aad0a332a692a7409c56182a2c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552955198,
+          "stop" : 1561552955238,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "d56b39aad0a332a692a7409c56182a2c"
+    }, {
+      "name" : "AssertionError: assert 'not uid field' == 'success'\n  - not uid field\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[7]",
+        "uid" : "a7f55c7641287157",
+        "parentUid" : "a1e02fc9765e53e6b7873b9f74334488",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552955278,
+          "stop" : 1561552955309,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "7" ]
+      } ],
+      "uid" : "a1e02fc9765e53e6b7873b9f74334488"
+    }, {
+      "name" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[10]",
+        "uid" : "b7c008face58aec5",
+        "parentUid" : "90287d237fc10568b9fdf888956f7d3b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552955474,
+          "stop" : 1561552955503,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "10" ]
+      } ],
+      "uid" : "90287d237fc10568b9fdf888956f7d3b"
+    }, {
+      "name" : "AssertionError: assert 'channel:cd7f...not in uid:汉字' == 'success'\n  - channel:cd7f0f10bdad not in uid:汉字\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[11]",
+        "uid" : "2830e35c8f1291f9",
+        "parentUid" : "f5cf3d4a4b27afaa280fe822a094cff8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552955521,
+          "stop" : 1561552955546,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "11" ]
+      } ],
+      "uid" : "f5cf3d4a4b27afaa280fe822a094cff8"
+    }, {
+      "name" : "AssertionError: assert 'parse the re...ded, code=100' == 'success'\n  - parse the request to json failed, req={\"channelId\": \"cd7f0f10bdad\", \"uid\": \"00000001\", \"transcodes\":[\"360P\",\"480P\",”720P”,”1080P”] }, ex=No JSON object could be decoded, code=100\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[2]",
+        "uid" : "83b907750b6b6cb6",
+        "parentUid" : "9ec3c6fb1a5fca82cd0867532ce318b1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552957077,
+          "stop" : 1561552957108,
+          "duration" : 31
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "2" ]
+      } ],
+      "uid" : "9ec3c6fb1a5fca82cd0867532ce318b1"
+    }, {
+      "name" : "AssertionError: assert 'success' == 'parse the request to js...uld be decoded, code=100'\n  - success\n  + parse the request to json failed, req={\"channelId\":, \"uid\": \"00000005\"}, ex=No JSON object could be decoded, code=100",
+      "children" : [ {
+        "name" : "test_living_getlist1[4]",
+        "uid" : "1932af023d953477",
+        "parentUid" : "0c1c02f28310c884a08ed2dbe59a193b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552957204,
+          "stop" : 1561552957231,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "4" ]
+      } ],
+      "uid" : "0c1c02f28310c884a08ed2dbe59a193b"
+    }, {
+      "name" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+      "children" : [ {
+        "name" : "test_living_getlist1[6]",
+        "uid" : "1512a6d7dbe9267a",
+        "parentUid" : "c3fa6764f052453e44085e573c3a4879",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552957342,
+          "stop" : 1561552957379,
+          "duration" : 37
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "6" ]
+      } ],
+      "uid" : "c3fa6764f052453e44085e573c3a4879"
+    }, {
+      "name" : "AssertionError: assert 'success' == 'parse the request to js...uld be decoded, code=100'\n  - success\n  + parse the request to json failed, req=, ex=No JSON object could be decoded, code=100",
+      "children" : [ {
+        "name" : "test_living_getlist1[15]",
+        "uid" : "b069d8a5b81b1567",
+        "parentUid" : "871a696f447aff8e85ab9b882903a28a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1561552957879,
+          "stop" : 1561552957906,
+          "duration" : 27
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "15" ]
+      } ],
+      "uid" : "871a696f447aff8e85ab9b882903a28a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

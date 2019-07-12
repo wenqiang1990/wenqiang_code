@@ -1,0 +1,133 @@
+{
+  "uid" : "1dfac76c096fdc1b",
+  "name" : "test_living_getlist1[0]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[0]",
+  "historyId" : "2b68cec55a8f040f3b4907a496e4d0d6",
+  "time" : {
+    "start" : 1561552954677,
+    "stop" : 1561552954716,
+    "duration" : 39
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bd51c6f785a70f55",
+      "name" : "log",
+      "source" : "bd51c6f785a70f55.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "5446e9e99d4b0eb6",
+      "name" : "stdout",
+      "source" : "5446e9e99d4b0eb6.txt",
+      "type" : "text/plain",
+      "size" : 964
+    }, {
+      "uid" : "cb027d3ad9bdd30",
+      "name" : "stderr",
+      "source" : "cb027d3ad9bdd30.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "10944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3e13708f92509862",
+      "status" : "passed",
+      "time" : {
+        "start" : 1561551793263,
+        "stop" : 1561551793299,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "c039299eebe294cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1561551128574,
+        "stop" : 1561551128650,
+        "duration" : 76
+      }
+    }, {
+      "uid" : "443087cfc830e34b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1561518299801,
+        "stop" : 1561518300109,
+        "duration" : 308
+      }
+    }, {
+      "uid" : "c7c41035fa2da8d1",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.180.39', port=8088): Max retries exceeded with url: /v1/application/afea8601a3204c4e9106b6c116c74972/livestream/channelInfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002140AECAC88>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "time" : {
+        "start" : 1561198684244,
+        "stop" : 1561198705275,
+        "duration" : 21031
+      }
+    }, {
+      "uid" : "8528279b472a4df6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1561099780797,
+        "stop" : 1561099780867,
+        "duration" : 70
+      }
+    }, {
+      "uid" : "9a6db01a53c7f8f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1561099590234,
+        "stop" : 1561099590270,
+        "duration" : 36
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1dfac76c096fdc1b.json",
+  "parameterValues" : [ "0" ]
+}

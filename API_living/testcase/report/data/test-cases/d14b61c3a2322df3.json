@@ -1,0 +1,86 @@
+{
+  "uid" : "d14b61c3a2322df3",
+  "name" : "test_living_getlist1[3]",
+  "fullName" : "testcase.test_living_updateChannel#test_living_getlist1[3]",
+  "historyId" : "f62bded478654f97dca7dcea9fd86e81",
+  "time" : {
+    "start" : 1561099783805,
+    "stop" : 1561099783847,
+    "duration" : 42
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'not uid fiel... cannot empty' == 'success'\n  - not uid field or uid cannot empty\n  + success",
+  "statusTrace" : "line = 3\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"updateChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'not uid fiel... cannot empty' == 'success'\nE         - not uid field or uid cannot empty\nE         + success\n\ntestcase\\test_living_updateChannel.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'not uid fiel... cannot empty' == 'success'\n  - not uid field or uid cannot empty\n  + success",
+    "statusTrace" : "line = 3\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"updateChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'not uid fiel... cannot empty' == 'success'\nE         - not uid field or uid cannot empty\nE         + success\n\ntestcase\\test_living_updateChannel.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ccb8832a8914ab4c",
+      "name" : "log",
+      "source" : "ccb8832a8914ab4c.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "ddfad0f80d9518c7",
+      "name" : "stdout",
+      "source" : "ddfad0f80d9518c7.txt",
+      "type" : "text/plain",
+      "size" : 276
+    }, {
+      "uid" : "8c541ea35f12fe1",
+      "name" : "stderr",
+      "source" : "8c541ea35f12fe1.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_updateChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "17828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_updateChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d14b61c3a2322df3.json",
+  "parameterValues" : [ "3" ]
+}

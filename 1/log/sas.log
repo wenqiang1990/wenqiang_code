@@ -1,0 +1,3 @@
+[2017-03-03 16:28:01,723] [INFO] Starting new HTTP connection (1): rfapi.wltest.com
+[2017-03-03 16:28:01,967] [DEBUG] "POST /api/pms/login/loginforsimple HTTP/1.1" 200 99
+[2017-03-03 16:28:01,969] [ERROR] 1 登陆 失败！！！，[200], {"MobileHead":{"Code":"GL_000","Message":"服务器繁忙，请稍后再试。"},"MobileBody":null}

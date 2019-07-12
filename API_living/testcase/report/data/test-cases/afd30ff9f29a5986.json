@@ -1,0 +1,146 @@
+{
+  "uid" : "afd30ff9f29a5986",
+  "name" : "test_living_getlist1[1]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[1]",
+  "historyId" : "6955c69f5f9e69865d2ac8d26aacdc05",
+  "time" : {
+    "start" : 1561552954759,
+    "stop" : 1561552954787,
+    "duration" : 28
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+  "statusTrace" : "line = 1\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel: not in uid:00000002' == 'success'\nE         - channel: not in uid:00000002\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+    "statusTrace" : "line = 1\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel: not in uid:00000002' == 'success'\nE         - channel: not in uid:00000002\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e331416867f028f",
+      "name" : "log",
+      "source" : "5e331416867f028f.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "7245defded28b317",
+      "name" : "stdout",
+      "source" : "7245defded28b317.txt",
+      "type" : "text/plain",
+      "size" : 242
+    }, {
+      "uid" : "1ed51fa2191700a5",
+      "name" : "stderr",
+      "source" : "1ed51fa2191700a5.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "10944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4c459c45a64bebfd",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "time" : {
+        "start" : 1561551793417,
+        "stop" : 1561551793445,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "6fffc3eb1940e170",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "time" : {
+        "start" : 1561551128705,
+        "stop" : 1561551128739,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "baa33f8feae50fea",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "time" : {
+        "start" : 1561518300129,
+        "stop" : 1561518300263,
+        "duration" : 134
+      }
+    }, {
+      "uid" : "959620e8031004dc",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.180.39', port=8088): Max retries exceeded with url: /v1/application/afea8601a3204c4e9106b6c116c74972/livestream/channelInfo (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002140B0965C0>: Failed to establish a new connection: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。'))",
+      "time" : {
+        "start" : 1561198705742,
+        "stop" : 1561198726773,
+        "duration" : 21031
+      }
+    }, {
+      "uid" : "40dbdd08d664d19f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "time" : {
+        "start" : 1561099780887,
+        "stop" : 1561099780936,
+        "duration" : 49
+      }
+    }, {
+      "uid" : "f964faaad650f9cf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+      "time" : {
+        "start" : 1561099590291,
+        "stop" : 1561099590326,
+        "duration" : 35
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "afd30ff9f29a5986.json",
+  "parameterValues" : [ "1" ]
+}

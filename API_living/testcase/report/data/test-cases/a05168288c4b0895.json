@@ -1,0 +1,86 @@
+{
+  "uid" : "a05168288c4b0895",
+  "name" : "test_living_getlist1[6]",
+  "fullName" : "testcase.test_living_updateChannel#test_living_getlist1[6]",
+  "historyId" : "e3d5bc38ad9f2246c556b44dc7ae2858",
+  "time" : {
+    "start" : 1561551796019,
+    "stop" : 1561551796056,
+    "duration" : 37
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+  "statusTrace" : "line = 6\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"updateChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       assert \"the value of...t':['test1']}\" == 'success'\nE         - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\nE         + success\n\ntestcase\\test_living_updateChannel.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+    "statusTrace" : "line = 6\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"updateChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       assert \"the value of...t':['test1']}\" == 'success'\nE         - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\nE         + success\n\ntestcase\\test_living_updateChannel.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3a34d6912061afee",
+      "name" : "log",
+      "source" : "3a34d6912061afee.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "4201c063c8351776",
+      "name" : "stdout",
+      "source" : "4201c063c8351776.txt",
+      "type" : "text/plain",
+      "size" : 333
+    }, {
+      "uid" : "e5c9b23968a3662b",
+      "name" : "stderr",
+      "source" : "e5c9b23968a3662b.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_updateChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "13396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_updateChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a05168288c4b0895.json",
+  "parameterValues" : [ "6" ]
+}

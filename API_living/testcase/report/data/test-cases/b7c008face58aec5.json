@@ -1,0 +1,137 @@
+{
+  "uid" : "b7c008face58aec5",
+  "name" : "test_living_getlist1[10]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[10]",
+  "historyId" : "5409707bcc6d9512471ab16c871881d3",
+  "time" : {
+    "start" : 1561552955474,
+    "stop" : 1561552955503,
+    "duration" : 29
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+  "statusTrace" : "line = 10\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\nE         - channel:汉字 not in uid:00000011\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+    "statusTrace" : "line = 10\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\nE         - channel:汉字 not in uid:00000011\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1d4924e0da8c2039",
+      "name" : "log",
+      "source" : "1d4924e0da8c2039.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "db046f77c1b3f75",
+      "name" : "stdout",
+      "source" : "db046f77c1b3f75.txt",
+      "type" : "text/plain",
+      "size" : 272
+    }, {
+      "uid" : "c1637d1e88f9a106",
+      "name" : "stderr",
+      "source" : "c1637d1e88f9a106.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "10944-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "10"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fe968e9adddd3400",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "time" : {
+        "start" : 1561551794054,
+        "stop" : 1561551794089,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "f9fc04bb0808959f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "time" : {
+        "start" : 1561551129530,
+        "stop" : 1561551129570,
+        "duration" : 40
+      }
+    }, {
+      "uid" : "81e225e11e127d4e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "time" : {
+        "start" : 1561518303127,
+        "stop" : 1561518303250,
+        "duration" : 123
+      }
+    }, {
+      "uid" : "69df3fd5a167fee1",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "time" : {
+        "start" : 1561099781750,
+        "stop" : 1561099781807,
+        "duration" : 57
+      }
+    }, {
+      "uid" : "aa56d086e5e7cb42",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'channel:汉字 n... uid:00000011' == 'success'\n  - channel:汉字 not in uid:00000011\n  + success",
+      "time" : {
+        "start" : 1561099590922,
+        "stop" : 1561099590955,
+        "duration" : 33
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b7c008face58aec5.json",
+  "parameterValues" : [ "10" ]
+}

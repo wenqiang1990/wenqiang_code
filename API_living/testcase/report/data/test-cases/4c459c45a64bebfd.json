@@ -1,0 +1,86 @@
+{
+  "uid" : "4c459c45a64bebfd",
+  "name" : "test_living_getlist1[1]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[1]",
+  "historyId" : "6955c69f5f9e69865d2ac8d26aacdc05",
+  "time" : {
+    "start" : 1561551793417,
+    "stop" : 1561551793445,
+    "duration" : 28
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+  "statusTrace" : "line = 1\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel: not in uid:00000002' == 'success'\nE         - channel: not in uid:00000002\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'channel: not in uid:00000002' == 'success'\n  - channel: not in uid:00000002\n  + success",
+    "statusTrace" : "line = 1\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel: not in uid:00000002' == 'success'\nE         - channel: not in uid:00000002\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "af76326e911fd8a8",
+      "name" : "log",
+      "source" : "af76326e911fd8a8.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "c81868d3d12d57c2",
+      "name" : "stdout",
+      "source" : "c81868d3d12d57c2.txt",
+      "type" : "text/plain",
+      "size" : 242
+    }, {
+      "uid" : "9f5449f35543d1bb",
+      "name" : "stderr",
+      "source" : "9f5449f35543d1bb.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "13396-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c459c45a64bebfd.json",
+  "parameterValues" : [ "1" ]
+}
