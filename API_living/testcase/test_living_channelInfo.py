@@ -3,7 +3,7 @@ import sys
 sys.path.append("D:\workspace\API_living\common")
 import common.api_request
 import common.request_excel
-import pytest,allure
+import pytest
 excel_file='D:/workspace/API_living/params/testcase.xlsx'
 
 
