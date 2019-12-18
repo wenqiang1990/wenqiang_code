@@ -1,0 +1,86 @@
+{
+  "uid" : "3a390b282832354d",
+  "name" : "test_living_getlist1[0]",
+  "fullName" : "testcase.test_living_startChannel#test_living_getlist1[0]",
+  "historyId" : "c2345cdd5957290e4b43eb42d5da297a",
+  "time" : {
+    "start" : 1571737383595,
+    "stop" : 1571737383628,
+    "duration" : 33
+  },
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "statusTrace" : "line = 0\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n>       redata = common.api_request.api_request_excel(excel_data)\n\ntestcase\\test_living_startChannel.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncommon\\api_request.py:43: in api_request_excel\n    print('返回信息: %s '%response.json())\nc:\\users\\qiuqiu\\anaconda3\\lib\\site-packages\\requests\\models.py:897: in json\n    return complexjson.loads(self.text, **kwargs)\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\__init__.py:348: in loads\n    return _default_decoder.decode(s)\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\decoder.py:337: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x0000021977DC46D8>\ns = '<!DOCTYPE html PUBLIC\\n\"-//W3C//DTD XHTML 1.0 Transitional//EN\"\\n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional...  Powered by <a href=\"http://www.cherrypy.org\">CherryPy unknown</a>\\n      </span>\\n    </div>\\n    </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "statusTrace" : "line = 0\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n>       redata = common.api_request.api_request_excel(excel_data)\n\ntestcase\\test_living_startChannel.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncommon\\api_request.py:43: in api_request_excel\n    print('返回信息: %s '%response.json())\nc:\\users\\qiuqiu\\anaconda3\\lib\\site-packages\\requests\\models.py:897: in json\n    return complexjson.loads(self.text, **kwargs)\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\__init__.py:348: in loads\n    return _default_decoder.decode(s)\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\decoder.py:337: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x0000021977DC46D8>\ns = '<!DOCTYPE html PUBLIC\\n\"-//W3C//DTD XHTML 1.0 Transitional//EN\"\\n\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional...  Powered by <a href=\"http://www.cherrypy.org\">CherryPy unknown</a>\\n      </span>\\n    </div>\\n    </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\nc:\\users\\qiuqiu\\anaconda3\\lib\\json\\decoder.py:355: JSONDecodeError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4be26d1cec70eb01",
+      "name" : "log",
+      "source" : "4be26d1cec70eb01.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "d19ea3a1d582392d",
+      "name" : "stdout",
+      "source" : "d19ea3a1d582392d.txt",
+      "type" : "text/plain",
+      "size" : 204
+    }, {
+      "uid" : "91e62c29222d1ea0",
+      "name" : "stderr",
+      "source" : "91e62c29222d1ea0.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_startChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "17896-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_startChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a390b282832354d.json",
+  "parameterValues" : [ "0" ]
+}

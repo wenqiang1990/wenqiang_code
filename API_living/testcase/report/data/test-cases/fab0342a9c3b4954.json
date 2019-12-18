@@ -1,0 +1,86 @@
+{
+  "uid" : "fab0342a9c3b4954",
+  "name" : "test_living_getlist1[3]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[3]",
+  "historyId" : "6d2764201042c15fddb4047dd57b0ebd",
+  "time" : {
+    "start" : 1564385433904,
+    "stop" : 1564385433944,
+    "duration" : 40
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'not channelId field' == 'success'\n  - not channelId field\n  + success",
+  "statusTrace" : "line = 3\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'not channelId field' == 'success'\nE         - not channelId field\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'not channelId field' == 'success'\n  - not channelId field\n  + success",
+    "statusTrace" : "line = 3\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'not channelId field' == 'success'\nE         - not channelId field\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "93fef57fe27bc09b",
+      "name" : "log",
+      "source" : "93fef57fe27bc09b.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "92ee384501a058b0",
+      "name" : "stdout",
+      "source" : "92ee384501a058b0.txt",
+      "type" : "text/plain",
+      "size" : 250
+    }, {
+      "uid" : "3232a264c64214f6",
+      "name" : "stderr",
+      "source" : "3232a264c64214f6.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "2180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fab0342a9c3b4954.json",
+  "parameterValues" : [ "3" ]
+}

@@ -1,0 +1,150 @@
+{
+  "uid" : "89b8a09730baa3e1",
+  "name" : "test_living_channelInfo[0]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_channelInfo[0]",
+  "historyId" : "b5f482e3697959389d62a24104cc5741",
+  "time" : {
+    "start" : 1571904414070,
+    "stop" : 1571904414251,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b6ec16a30acad37",
+      "name" : "log",
+      "source" : "b6ec16a30acad37.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "5875f2a1241e3265",
+      "name" : "stdout",
+      "source" : "5875f2a1241e3265.txt",
+      "type" : "text/plain",
+      "size" : 1014
+    }, {
+      "uid" : "be60975ffe14a2da",
+      "name" : "stderr",
+      "source" : "be60975ffe14a2da.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "6476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8fb42981cb43d202",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571820827647,
+        "stop" : 1571820827695,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "114392e5aba9d1d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571818945493,
+        "stop" : 1571818945529,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "82389abfd3a8b5ee",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818530030,
+        "stop" : 1571818530055,
+        "duration" : 25
+      }
+    }, {
+      "uid" : "d9879c6178756684",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818529766,
+        "stop" : 1571818529793,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "b9b3ba2da469d6b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571814716302,
+        "stop" : 1571814716366,
+        "duration" : 64
+      }
+    }, {
+      "uid" : "baa35787ade3237b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571738933323,
+        "stop" : 1571738933381,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "b6ad2b888aea4b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737380551,
+        "stop" : 1571737380596,
+        "duration" : 45
+      }
+    }, {
+      "uid" : "1c7e5ed5408e262e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737185344,
+        "stop" : 1571737185518,
+        "duration" : 174
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "89b8a09730baa3e1.json",
+  "parameterValues" : [ "0" ]
+}

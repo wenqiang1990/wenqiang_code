@@ -1,0 +1,86 @@
+{
+  "uid" : "9eb626c03eada135",
+  "name" : "test_living_getlist1[7]",
+  "fullName" : "testcase.test_living_startChannel#test_living_getlist1[7]",
+  "historyId" : "9d752300ee71e21ea5fd31466e243c04",
+  "time" : {
+    "start" : 1564385437642,
+    "stop" : 1564385437733,
+    "duration" : 91
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'parse the re...ded, code=100' == 'success'\n  - parse the request to json failed, req=, ex=No JSON object could be decoded, code=100\n  + success",
+  "statusTrace" : "line = 7\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'parse the re...ded, code=100' == 'success'\nE         - parse the request to json failed, req=, ex=No JSON object could be decoded, code=100\nE         + success\n\ntestcase\\test_living_startChannel.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'parse the re...ded, code=100' == 'success'\n  - parse the request to json failed, req=, ex=No JSON object could be decoded, code=100\n  + success",
+    "statusTrace" : "line = 7\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'parse the re...ded, code=100' == 'success'\nE         - parse the request to json failed, req=, ex=No JSON object could be decoded, code=100\nE         + success\n\ntestcase\\test_living_startChannel.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8b10640759edfd2b",
+      "name" : "log",
+      "source" : "8b10640759edfd2b.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "e93742b044d8ce22",
+      "name" : "stdout",
+      "source" : "e93742b044d8ce22.txt",
+      "type" : "text/plain",
+      "size" : 284
+    }, {
+      "uid" : "56a7c5cd2b376735",
+      "name" : "stderr",
+      "source" : "56a7c5cd2b376735.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_startChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "2180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_startChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "7"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9eb626c03eada135.json",
+  "parameterValues" : [ "7" ]
+}

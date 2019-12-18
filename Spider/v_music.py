@@ -12,14 +12,14 @@ from selenium.webdriver.common.keys import Keys  #导入Keys
 from selenium.webdriver.common.action_chains import ActionChains
 #导入selenium的异常
 from selenium.common.exceptions import TimeoutException,NoSuchElementException,WebDriverException
-
+chrome_driver="D:\chromedriver\chromedriver.exe"
 def getSong(songer):
     chrome_options = webdriver.ChromeOptions()
     # 不加载图片(提升加载速度)；设置默认保存文件路径
     prefs = {"profile.managed_default_content_settings.images":2,\
              "download.default_directory": 'D:\\download_music\%s' %songer}
     chrome_options.add_experimental_option("prefs",prefs)
-    browser = webdriver.Chrome(chrome_options=chrome_options) #启动浏览器 
+    browser = webdriver.Chrome(executable_path = chrome_driver,options=chrome_options) #启动浏览器
     browser.maximize_window() #最大化
     #设置网页加载等待时间为20s,超过20s后则停止加载
     browser.set_page_load_timeout(20) 
@@ -40,10 +40,10 @@ def getSong(songer):
             elem.click()
             time.sleep(10)
             #切换到新弹出的窗口
-            browser.switch_to_window(browser.window_handles[1])
+            browser.switch_to.window(browser.window_handles[1])
             #判断是否是新浪微盘网页，若是，则再判断里面分享的歌曲是否大于一首
-            if re.match('^http://vdisk.weibo.com/s',browser.current_url):
-                print("这是一个新浪微盘的网页！")
+            if re.match('^https?://vdisk.weibo.com*',browser.current_url):
+                print("%s 是一个新浪微盘的网页！" %browser.current_url)
                 t = browser.find_elements_by_class_name("short_name")
                 if len(t) > 0:
                     print("歌曲大于1首，不进行下载！\n")
@@ -76,13 +76,13 @@ def getSong(songer):
                                 break
                         
             else:
-                print(("这不是一个新浪微盘的网页！\n"))
+                print(("这不是新浪微盘的网页！\n"))
             #关闭当前窗口，并切换到原来的搜索页面
             browser.close()
             time.sleep(2)
-            browser.switch_to_window(browser.window_handles[0])
+            browser.switch_to.window(browser.window_handles[0])
     
-    pages = 20 #设置爬取网页的数量为20，即200条搜索记录
+    pages = 1 #设置爬取网页的数量为20，即200条搜索记录
     for i in range(pages):
         each_page(i)
         #点击该页面中的“下一页”按钮
@@ -98,7 +98,7 @@ def getSong(songer):
 def main():
     d1 = datetime.datetime.now()
     #要搜索的歌手的列表
-    songer_lst = ['杨钰莹']
+    songer_lst = ['红楼梦']
     for songer in songer_lst: #运行getSong()函数，并加入异常处理
         try:
             print(datetime.datetime.now(),"开始搜索%s的歌曲啦！"% songer)
@@ -107,9 +107,9 @@ def main():
         except TimeoutException:
             print(datetime.datetime.now(),"%s的歌曲下载超时啦！嘿嘿~~"% songer)
         except NoSuchElementException:
-            print(datetime.datetime.now(),"哎呦，除了点小问题... NoSuchElementException")
+            print(datetime.datetime.now(),"哎呦，出了点小问题... NoSuchElementException")
         except WebDriverException:
-            print(datetime.datetime.now(),"哎呦，除了点小问题...WebDriverException")
+            print(datetime.datetime.now(),"哎呦，出了点小问题...WebDriverException")
     d2 = datetime.datetime.now()
     print("开始时间：",d1)
     print("结束时间：",d2)

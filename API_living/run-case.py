@@ -2,7 +2,7 @@
 import time,os
 
 def run_test():
-    os.system("pytest D:\\workspace\\API_living\\testcase\\ --alluredir=D:\\workspace\\API_living\\testcase\\report_xml")#执行用例将测试结果给allure，report_xml是报告生成路径
+    os.system("pytest D:\\workspace\\API_living\\testcase\\ -n 2 --reruns 1 --alluredir=D:\\workspace\\API_living\\testcase\\report_xml")#执行用例将测试结果给allure，report_xml是报告生成路径
     print('执行用例结束')
     os.system("allure generate D:\\workspace\\API_living\\testcase\\report_xml\\ -o D:\\workspace\\API_living\\testcase\\report\\ --clean")#执行用例将测试结果给allure ，report_xml是报告存放路径  新报告生成路径为默认allure-report
     print('生成报告')

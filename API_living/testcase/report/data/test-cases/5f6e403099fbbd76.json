@@ -1,0 +1,82 @@
+{
+  "uid" : "5f6e403099fbbd76",
+  "name" : "test_living_getlist1[11]",
+  "fullName" : "testcase.test_living_updateChannel#test_living_getlist1[11]",
+  "historyId" : "83593275e8669b6667ed0b9068988c68",
+  "time" : {
+    "start" : 1564385438638,
+    "stop" : 1564385438689,
+    "duration" : 51
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b0582c9f85a20b81",
+      "name" : "log",
+      "source" : "b0582c9f85a20b81.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "eff807d3f452c4e8",
+      "name" : "stdout",
+      "source" : "eff807d3f452c4e8.txt",
+      "type" : "text/plain",
+      "size" : 1017
+    }, {
+      "uid" : "bedea556024d731e",
+      "name" : "stderr",
+      "source" : "bedea556024d731e.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_updateChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "2180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_updateChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "11"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f6e403099fbbd76.json",
+  "parameterValues" : [ "11" ]
+}

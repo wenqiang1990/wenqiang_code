@@ -1,0 +1,86 @@
+{
+  "uid" : "c35e8c9a11790916",
+  "name" : "test_living_getlist1[6]",
+  "fullName" : "testcase.test_living_channelInfo#test_living_getlist1[6]",
+  "historyId" : "ca5bc69cdb7a00dee76955733c00fd62",
+  "time" : {
+    "start" : 1564385434123,
+    "stop" : 1564385434180,
+    "duration" : 57
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'channel:cd7f...0000007000000' == 'success'\n  - channel:cd7f0f10bdad not in uid:00000007000000\n  + success",
+  "statusTrace" : "line = 6\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel:cd7f...0000007000000' == 'success'\nE         - channel:cd7f0f10bdad not in uid:00000007000000\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'channel:cd7f...0000007000000' == 'success'\n  - channel:cd7f0f10bdad not in uid:00000007000000\n  + success",
+    "statusTrace" : "line = 6\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"info\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       AssertionError: assert 'channel:cd7f...0000007000000' == 'success'\nE         - channel:cd7f0f10bdad not in uid:00000007000000\nE         + success\n\ntestcase\\test_living_channelInfo.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3ec3ae0f7a3e7b2b",
+      "name" : "log",
+      "source" : "3ec3ae0f7a3e7b2b.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "1b6db7a88e734546",
+      "name" : "stdout",
+      "source" : "1b6db7a88e734546.txt",
+      "type" : "text/plain",
+      "size" : 312
+    }, {
+      "uid" : "ea5391bef4c98da9",
+      "name" : "stderr",
+      "source" : "ea5391bef4c98da9.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelInfo"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "2180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelInfo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c35e8c9a11790916.json",
+  "parameterValues" : [ "6" ]
+}

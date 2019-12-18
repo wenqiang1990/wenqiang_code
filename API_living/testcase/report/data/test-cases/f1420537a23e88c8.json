@@ -1,0 +1,212 @@
+{
+  "uid" : "f1420537a23e88c8",
+  "name" : "test_living_getlist1[6]",
+  "fullName" : "testcase.test_living_updateChannel#test_living_getlist1[6]",
+  "historyId" : "e3d5bc38ad9f2246c556b44dc7ae2858",
+  "time" : {
+    "start" : 1571904416446,
+    "stop" : 1571904416481,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7c974fa0b20204fd",
+      "name" : "log",
+      "source" : "7c974fa0b20204fd.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "13c0f256cb9fed68",
+      "name" : "stdout",
+      "source" : "13c0f256cb9fed68.txt",
+      "type" : "text/plain",
+      "size" : 367
+    }, {
+      "uid" : "ed01d41aaaeffd71",
+      "name" : "stderr",
+      "source" : "ed01d41aaaeffd71.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_updateChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "6476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_updateChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5768e4f25f98ce55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571820833988,
+        "stop" : 1571820834039,
+        "duration" : 51
+      }
+    }, {
+      "uid" : "ffce06fa2268358a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571818948918,
+        "stop" : 1571818948959,
+        "duration" : 41
+      }
+    }, {
+      "uid" : "587ceb263aac1bbf",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818538878,
+        "stop" : 1571818538905,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "2d79131ad4c3313e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818538826,
+        "stop" : 1571818538850,
+        "duration" : 24
+      }
+    }, {
+      "uid" : "e29dd0ff359149f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571814720877,
+        "stop" : 1571814720923,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "c7a261484070ac9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571738937004,
+        "stop" : 1571738937034,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "ba9b65a629a327ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737384378,
+        "stop" : 1571737384409,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "6f3e91681477f626",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737189427,
+        "stop" : 1571737189456,
+        "duration" : 29
+      }
+    }, {
+      "uid" : "cc02842d902dcb98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393448324,
+        "stop" : 1564393448402,
+        "duration" : 78
+      }
+    }, {
+      "uid" : "f717cb8e068463ce",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == \"the value of ...t':['test1']}\"\n  Skipping 74 identical leading characters in diff, use -v to show\n  - :['test1']}\n  + :['test1']}the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}",
+      "time" : {
+        "start" : 1564393230649,
+        "stop" : 1564393230695,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "acc6591ac93a64e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == \"the value of ...t':['test1']}\"\n  Skipping 74 identical leading characters in diff, use -v to show\n  - :['test1']}\n  + :['test1']}the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}",
+      "time" : {
+        "start" : 1564392894403,
+        "stop" : 1564392894485,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "36e6d35a6a5825dc",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == \"the value of ...t':['test1']}\"\n  Skipping 74 identical leading characters in diff, use -v to show\n  - :['test1']}\n  + :['test1']}the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}",
+      "time" : {
+        "start" : 1564390010616,
+        "stop" : 1564390010650,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "902a8391ac303b64",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+      "time" : {
+        "start" : 1564386998943,
+        "stop" : 1564386998989,
+        "duration" : 46
+      }
+    }, {
+      "uid" : "dafc2594d8ed6f06",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+      "time" : {
+        "start" : 1564385438276,
+        "stop" : 1564385438324,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "1c2372c848bd8df2",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"the value of...t':['test1']}\" == 'success'\n  - the value of the 'watermarks' field must be a dictionary type, ex: {'text':['test1']}\n  + success",
+      "time" : {
+        "start" : 1564385130348,
+        "stop" : 1564385130417,
+        "duration" : 69
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f1420537a23e88c8.json",
+  "parameterValues" : [ "6" ]
+}

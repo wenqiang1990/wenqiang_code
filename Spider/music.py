@@ -20,7 +20,7 @@ def get_song(x):
     if number == -1:
         exit()
     else:
-        name = "F:\\" + str(data[number - 1]['FileName']).replace('<em>', '').replace('</em>', '')
+        name = "D:\\" + str(data[number - 1]['FileName']).replace('<em>', '').replace('</em>', '')
         fhash = re.findall('"FileHash":"(.*?)"', res)[number - 1]
         hash_url = "http://www.kugou.com/yy/index.php?r=play/getdata&hash=" + fhash
         hash_content = requests.get(hash_url)

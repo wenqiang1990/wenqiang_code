@@ -1,0 +1,11 @@
+sheet getlist: 
+row_num 28: 
+sheet info: 
+row_num 13: 
+sheet updateChannel: 
+row_num 19: 
+sheet startChannel: 
+row_num 10: 
+获取直播频道信息
+请求包体: b'{"channelId": "cd7f0f10bdad00000000", "uid": "00000003"}' 
+返回信息: {'message': 'channel:cd7f0f10bdad00000000 not in uid:00000003', 'code': 400} 

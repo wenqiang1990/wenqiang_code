@@ -3,8 +3,10 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/rongxin/public" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/API_meetliving" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/API_meetliving/testcase" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/API_living" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/youhui_ios" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rongshi_android_2.5.0/public" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (workspace)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

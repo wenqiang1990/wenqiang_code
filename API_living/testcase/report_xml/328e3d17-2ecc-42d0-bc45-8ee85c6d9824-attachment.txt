@@ -1,9 +1,0 @@
-sheet getlist: 
-row_num 28: 
-sheet info: 
-row_num 13: 
-sheet updateChannel: 
-row_num 19: 
-更新直播频道信息
-请求包体: b'{"channelId": "cd7f0f10bdad", "uid": "00000001", "description": "test"}' 
-返回信息: {'message': 'success', 'code': 0, 'data': {'status': 'NOSTREAM', 'updateTime': '2019/06/26 11:05:13', 'channelId': 'cd7f0f10bdad', 'description': 'test', 'name': '00000001', 'notifyUrl': '', 'channelCover': '', 'customData': '', 'transcodes': ['360P', 'wm'], 'createTime': '2018/11/26 18:00:35', 'recording': '', 'watermarks': {'text': ['TIME'], 'image': []}, 'publish': {'vhost': '__defaultVhost__', 'app': 'afea8601a3204c4e9106b6c116c74972', 'stream': '1543226435123'}, 'securityPolicy': '', 'appId': 'afea8601a3204c4e9106b6c116c74972', 'uid': '00000001', 'confId': '', 'roomId': '', 'thumbnail': '1280x720x5xN', 'realtimeInfo': {'playCounts': 0, 'updateTimeStr': '2019/05/21 17:54:45', 'updateTime': 1558432485747, 'clients': 2, 'maxClients': 2}, 'pullUrl': ''}} 

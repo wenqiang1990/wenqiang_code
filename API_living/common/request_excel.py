@@ -1,14 +1,8 @@
 # coding:utf-8
-import yaml
-import os
 import requests
 import json
-import schema
-import jsonschema
 import sys
 sys.path.append("..")
-from params import schema2
-from jsonschema import validate
 import xlrd
 
 

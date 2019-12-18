@@ -1,0 +1,86 @@
+{
+  "uid" : "4c1cbd7750ac24d8",
+  "name" : "test_living_getlist1[4]",
+  "fullName" : "testcase.test_living_startChannel#test_living_getlist1[4]",
+  "historyId" : "18df19ac6fa5b00031cd5020f347bc76",
+  "time" : {
+    "start" : 1564385437367,
+    "stop" : 1564385437415,
+    "duration" : 48
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'channel not ... uid:00000001' == 'parse the req...ded, code=100'\n  - channel not exists, channelId:cd7f0f10bdad1 not in uid:00000001\n  + parse the request to json failed, req={\"channelId\":, \"uid\": \"00000005\"}, ex=No JSON object could be decoded, code=100",
+  "statusTrace" : "line = 4\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       assert 'channel not ... uid:00000001' == 'parse the req...ded, code=100'\nE         - channel not exists, channelId:cd7f0f10bdad1 not in uid:00000001\nE         + parse the request to json failed, req={\"channelId\":, \"uid\": \"00000005\"}, ex=No JSON object could be decoded, code=100\n\ntestcase\\test_living_startChannel.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'channel not ... uid:00000001' == 'parse the req...ded, code=100'\n  - channel not exists, channelId:cd7f0f10bdad1 not in uid:00000001\n  + parse the request to json failed, req={\"channelId\":, \"uid\": \"00000005\"}, ex=No JSON object could be decoded, code=100",
+    "statusTrace" : "line = 4\n\n    @pytest.mark.parametrize(\"line\", lines)#参数化\n    def test_living_getlist1(line):\n        excel_data = common.request_excel.open_excel(excel_file)\n        excel_data = list(excel_data[\"startChannel\"][line])  # 依次取出列表中的元组\n        host = str(excel_data[2]) + \":\" + str(excel_data[3])\n        appid = excel_data[4]\n        url = excel_data[5]\n        check=excel_data[10]\n        excel_data[5] = url % (host, appid)\n        #print(excel_data[5])\n        redata = common.api_request.api_request_excel(excel_data)\n>       assert redata[\"message\"] == check\nE       assert 'channel not ... uid:00000001' == 'parse the req...ded, code=100'\nE         - channel not exists, channelId:cd7f0f10bdad1 not in uid:00000001\nE         + parse the request to json failed, req={\"channelId\":, \"uid\": \"00000005\"}, ex=No JSON object could be decoded, code=100\n\ntestcase\\test_living_startChannel.py:23: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6bbc8163b47fbf5f",
+      "name" : "log",
+      "source" : "6bbc8163b47fbf5f.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "f2b80ab1031ac862",
+      "name" : "stdout",
+      "source" : "f2b80ab1031ac862.txt",
+      "type" : "text/plain",
+      "size" : 324
+    }, {
+      "uid" : "21cf259b92d25bc8",
+      "name" : "stderr",
+      "source" : "21cf259b92d25bc8.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_startChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "2180-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_startChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "4"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c1cbd7750ac24d8.json",
+  "parameterValues" : [ "4" ]
+}

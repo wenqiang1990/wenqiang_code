@@ -1,9 +1,0 @@
-sheet getlist: 
-row_num 28: 
-sheet info: 
-row_num 13: 
-sheet updateChannel: 
-row_num 19: 
-更新直播频道信息
-请求包体: b'{"channelId": "cd7f0f10bdad", "uid": "00000001", "transcodes":["360P","480P",\xe2\x80\x9d720P\xe2\x80\x9d,\xe2\x80\x9d1080P\xe2\x80\x9d] }' 
-返回信息: {'message': 'parse the request to json failed, req={"channelId": "cd7f0f10bdad", "uid": "00000001", "transcodes":["360P","480P",”720P”,”1080P”] }, ex=No JSON object could be decoded, code=100', 'code': 100} 

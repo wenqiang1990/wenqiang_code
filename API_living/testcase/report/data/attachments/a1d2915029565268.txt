@@ -1,9 +1,0 @@
-sheet getlist: 
-row_num 28: 
-sheet info: 
-row_num 13: 
-sheet updateChannel: 
-row_num 13: 
-获取直播频道信息
-请求包体: b'{"uid": "00000004"}' 
-返回信息: {'message': 'not channelId field', 'code': 100} 

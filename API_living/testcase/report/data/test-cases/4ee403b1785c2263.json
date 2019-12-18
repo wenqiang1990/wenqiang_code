@@ -1,0 +1,208 @@
+{
+  "uid" : "4ee403b1785c2263",
+  "name" : "test_living_getlist1[6]",
+  "fullName" : "testcase.test_living_startChannel#test_living_getlist1[6]",
+  "historyId" : "3e2818bea184738dca53ff171075ca48",
+  "time" : {
+    "start" : 1571904416224,
+    "stop" : 1571904416259,
+    "duration" : 35
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b8bb0e16fd4a3bbf",
+      "name" : "log",
+      "source" : "b8bb0e16fd4a3bbf.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "bfad97109add9e62",
+      "name" : "stdout",
+      "source" : "bfad97109add9e62.txt",
+      "type" : "text/plain",
+      "size" : 260
+    }, {
+      "uid" : "a3dc5f2692928690",
+      "name" : "stderr",
+      "source" : "a3dc5f2692928690.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_startChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "17948-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_startChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c2e908bac337341b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571820833293,
+        "stop" : 1571820833368,
+        "duration" : 75
+      }
+    }, {
+      "uid" : "f5032e95c8de0b86",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571818948360,
+        "stop" : 1571818948407,
+        "duration" : 47
+      }
+    }, {
+      "uid" : "713583e33a07d23e",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818537811,
+        "stop" : 1571818537833,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "3f6d3e54613d17fd",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818537759,
+        "stop" : 1571818537786,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "3c0d0ede8cf15c6b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571814720270,
+        "stop" : 1571814720300,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "f6fcffaa8a927c88",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571738936382,
+        "stop" : 1571738936414,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "f821afe4209edc22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737383960,
+        "stop" : 1571737383987,
+        "duration" : 27
+      }
+    }, {
+      "uid" : "18b729a978218e28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737189001,
+        "stop" : 1571737189029,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "90b8909d0f8fd8a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393447276,
+        "stop" : 1564393447348,
+        "duration" : 72
+      }
+    }, {
+      "uid" : "4b1fa0d5053ef33b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393230153,
+        "stop" : 1564393230186,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "911669a45a1a2d28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564392893575,
+        "stop" : 1564392893642,
+        "duration" : 67
+      }
+    }, {
+      "uid" : "d437d6e9c90c550c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564390009820,
+        "stop" : 1564390009905,
+        "duration" : 85
+      }
+    }, {
+      "uid" : "dc079caa3efc43ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564386998430,
+        "stop" : 1564386998467,
+        "duration" : 37
+      }
+    }, {
+      "uid" : "867cf1a1eeb7b54f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"channel no 'channelId' field\" == 'success'\n  - channel no 'channelId' field\n  + success",
+      "time" : {
+        "start" : 1564385437524,
+        "stop" : 1564385437594,
+        "duration" : 70
+      }
+    }, {
+      "uid" : "a01b0e16978f79f",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"channel no 'channelId' field\" == 'success'\n  - channel no 'channelId' field\n  + success",
+      "time" : {
+        "start" : 1564385129141,
+        "stop" : 1564385129217,
+        "duration" : 76
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4ee403b1785c2263.json",
+  "parameterValues" : [ "6" ]
+}

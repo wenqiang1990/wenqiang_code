@@ -8,13 +8,13 @@
          Content-Type: application/json;charset=utf-8
      json:
          appId: "ff8080815dbc080c015dbc9d7cd40003"
-         userId: "6bd2bd1de47d44948434329d8a2f0fb6@1"
-         confId: "110622"
+         userId: "13366778612@2"
+         confId: "111262"
          resolutionIdx: "4"
          layoutIdx: "0" ##布局 -1 自动 0 首个大屏
          model: "auto"
          members:
-             - {"memberId": "6bd2bd1de47d44948434329d8a2f0fb6@1","idType": 2}
+             - {"memberId": "13366778612@2","idType": 2}
  validators:
      - {"check": "status_code","expeted":200}
 
@@ -47,7 +47,7 @@
          Content-Type: application/json;charset=utf-8
      json:
          appId: "ff8080815dbc080c015dbc9d7cd40003"
-         userId: "6bd2bd1de47d44948434329d8a2f0fb6@1"
+         userId: "13366778612@2"
          confId: "110148"
          sessionId: "LIVE20190507170129126"
  validators:

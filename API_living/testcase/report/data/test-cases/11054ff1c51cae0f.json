@@ -1,0 +1,208 @@
+{
+  "uid" : "11054ff1c51cae0f",
+  "name" : "test_living_getlist1[3]",
+  "fullName" : "testcase.test_living_startChannel#test_living_getlist1[3]",
+  "historyId" : "dba10bd91500abe774a90f7933ecb00f",
+  "time" : {
+    "start" : 1571904416138,
+    "stop" : 1571904416182,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e538fe1ad2d9fb5c",
+      "name" : "log",
+      "source" : "e538fe1ad2d9fb5c.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "33cc77dcb2e82cf7",
+      "name" : "stdout",
+      "source" : "33cc77dcb2e82cf7.txt",
+      "type" : "text/plain",
+      "size" : 263
+    }, {
+      "uid" : "520e7a2e06f671a1",
+      "name" : "stderr",
+      "source" : "520e7a2e06f671a1.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_startChannel"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "6476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_startChannel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "3"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cc829b9358a3611c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571820832998,
+        "stop" : 1571820833080,
+        "duration" : 82
+      }
+    }, {
+      "uid" : "2746c1f47e37c950",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571818948197,
+        "stop" : 1571818948230,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "e602de9fe0eec26f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818537311,
+        "stop" : 1571818537339,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "34281c513aeebe16",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818537264,
+        "stop" : 1571818537286,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "81d075426d65a5bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571814720126,
+        "stop" : 1571814720161,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "8862e40b1206bccd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571738936267,
+        "stop" : 1571738936295,
+        "duration" : 28
+      }
+    }, {
+      "uid" : "1174a7f5c72f07f7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737383837,
+        "stop" : 1571737383868,
+        "duration" : 31
+      }
+    }, {
+      "uid" : "7edc6b47764f4576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737188825,
+        "stop" : 1571737188867,
+        "duration" : 42
+      }
+    }, {
+      "uid" : "770cdc36e3f8bfd8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393446995,
+        "stop" : 1564393447069,
+        "duration" : 74
+      }
+    }, {
+      "uid" : "f4c28bd265938571",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393229950,
+        "stop" : 1564393229997,
+        "duration" : 47
+      }
+    }, {
+      "uid" : "6df0f0980a77ce28",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564392893344,
+        "stop" : 1564392893397,
+        "duration" : 53
+      }
+    }, {
+      "uid" : "3871fbe48d9425ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564390009401,
+        "stop" : 1564390009525,
+        "duration" : 124
+      }
+    }, {
+      "uid" : "54a8b0a0a29cd3fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564386998277,
+        "stop" : 1564386998311,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "fe654db64d5e8ac8",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"channel no 'uid' field\" == 'success'\n  - channel no 'uid' field\n  + success",
+      "time" : {
+        "start" : 1564385437298,
+        "stop" : 1564385437346,
+        "duration" : 48
+      }
+    }, {
+      "uid" : "63b2786f69bd6dcf",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert \"channel no 'uid' field\" == 'success'\n  - channel no 'uid' field\n  + success",
+      "time" : {
+        "start" : 1564385128746,
+        "stop" : 1564385128875,
+        "duration" : 129
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "11054ff1c51cae0f.json",
+  "parameterValues" : [ "3" ]
+}

@@ -1,0 +1,206 @@
+{
+  "uid" : "6e9dba8a53f5bce1",
+  "name" : "test_living_getlist1[20]",
+  "fullName" : "testcase.test_living_channelList#test_living_getlist1[20]",
+  "historyId" : "c5e5c9ab454230cf61d5bd648d54afc6",
+  "time" : {
+    "start" : 1571904415011,
+    "stop" : 1571904415055,
+    "duration" : 44
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c13c2dc862a22134",
+      "name" : "log",
+      "source" : "c13c2dc862a22134.txt",
+      "type" : "text/plain",
+      "size" : 0
+    }, {
+      "uid" : "9602f60d2a6dfea5",
+      "name" : "stdout",
+      "source" : "9602f60d2a6dfea5.txt",
+      "type" : "text/plain",
+      "size" : 2227
+    }, {
+      "uid" : "1dece61698713c74",
+      "name" : "stderr",
+      "source" : "1dece61698713c74.txt",
+      "type" : "text/plain",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_living_channelList"
+  }, {
+    "name" : "host",
+    "value" : "qiuqiu"
+  }, {
+    "name" : "thread",
+    "value" : "6476-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_living_channelList"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "line",
+    "value" : "20"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2f5f53747399f577",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571820830399,
+        "stop" : 1571820830458,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "57db1b8cb4cce73c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571818946794,
+        "stop" : 1571818946824,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "c57834ddc8d46504",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818533854,
+        "stop" : 1571818533884,
+        "duration" : 30
+      }
+    }, {
+      "uid" : "31d55bfba99e4762",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() got an unexpected keyword argument 'encoding'",
+      "time" : {
+        "start" : 1571818533798,
+        "stop" : 1571818533824,
+        "duration" : 26
+      }
+    }, {
+      "uid" : "26a161d6cf28919c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571814718337,
+        "stop" : 1571814718370,
+        "duration" : 33
+      }
+    }, {
+      "uid" : "d07fa28229e6dd56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571738934734,
+        "stop" : 1571738934766,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "998be5590d862d70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737382457,
+        "stop" : 1571737382491,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "c7f7aa3877841418",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571737187290,
+        "stop" : 1571737187324,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "bce377ab6ee6a75d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393446044,
+        "stop" : 1564393446099,
+        "duration" : 55
+      }
+    }, {
+      "uid" : "d86c90598ed21425",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564393229369,
+        "stop" : 1564393229405,
+        "duration" : 36
+      }
+    }, {
+      "uid" : "88e29759cd45e3a9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564392892563,
+        "stop" : 1564392892622,
+        "duration" : 59
+      }
+    }, {
+      "uid" : "374889d3e685581f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564390008201,
+        "stop" : 1564390008264,
+        "duration" : 63
+      }
+    }, {
+      "uid" : "81ac9f4d428875bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564386997746,
+        "stop" : 1564386997785,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "1116260f5e986be5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564385436603,
+        "stop" : 1564385436659,
+        "duration" : 56
+      }
+    }, {
+      "uid" : "c5a0bc307dec0011",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564385127213,
+        "stop" : 1564385127431,
+        "duration" : 218
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6e9dba8a53f5bce1.json",
+  "parameterValues" : [ "20" ]
+}
